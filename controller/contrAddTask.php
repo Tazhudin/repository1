@@ -1,8 +1,8 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$title = $_POST['title'];
-$text = $_POST['text'];
+$name = strip_tags($_POST['name']);
+$email = strip_tags($_POST['email']);
+$title = strip_tags($_POST['title']);
+$text = strip_tags($_POST['text']);
 
 require_once '../model/dbOperations.php'; // подключаем файл модели с со всеми опрациями с базой данных
 $add = addTask($name, $email, $title, $text, $connect); // добавление записи
