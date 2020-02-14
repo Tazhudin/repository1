@@ -2,7 +2,6 @@
 //подключаем шапку
 include 'views/layauts/header.php';
 ?>
-
 			<div class="col-9 tasks">
 				<h2>все задачи</h2>
 				<div class="sort">
@@ -11,12 +10,9 @@ include 'views/layauts/header.php';
 					<a href="?sortBy=<?php echo 'email_author' ?>"><button type="button" class="btn-sm btn-success">по email </button></a>
 					<a href="?sortBy=<?php echo 'status' ?>"><button type="button" class="btn-sm btn-success">по статусу</button></a>
 				</div>
-
 				<div class="">
-
 				  	<div class='task'>
 <?php
-
 include 'controller/contrGetTasks.php'; //подключаем контроллер возвращающий задачи по 3 и общее
 $num = 0; //
 while (($row = $Tasks->fetch_assoc()) != FALSE) {
@@ -51,9 +47,7 @@ for ($i = 0; $i < $pages; $i++) {
 							</ul>
 					</div>
 				</div>
-
 	    	</div>
-
 <?php
 include 'views/layauts/footer.php'; //подключаем футер
 ?>

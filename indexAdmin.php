@@ -9,9 +9,7 @@ include('views/layauts/headerAdmin.php');  //подключаем шапку
 					<a href="?sortBy=<?php echo'email_author'?>"><button type="button" class="btn-sm btn-success">по email </button></a>
 					<a href="?sortBy=<?php echo'status'?>"><button type="button" class="btn-sm btn-success">по статусу</button></a>
 				</div>
-
 				<div class="">
-
 					<div class='task'>
 					<?php				
 					include('controller/contrGetTasks.php');//подключаем контроллер возвращающий задачи по 3 и общее кол-во записей в бд 	
@@ -34,12 +32,8 @@ include('views/layauts/headerAdmin.php');  //подключаем шапку
 											}
 										echo "<a href=''><input type='submit' name='' value='изменить''></a>";
 										echo "</form>";
-										echo "<hr>";
-										
-
-											
+										echo "<hr>";										
 			  						}
-
 			  		?>
 				    <div id="addButton"> 
 							<a href="views/addTask.php" >
@@ -55,14 +49,10 @@ include('views/layauts/headerAdmin.php');  //подключаем шапку
 			  						}
 			  		?>
 						</ul>
-
 					</div>
-
-
 			</div>
 		</div>
 	</div>	
-
 <?php 
 include('views/layauts/footer.php'); //подключаем футер
 ?>
