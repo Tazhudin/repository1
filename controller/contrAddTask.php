@@ -1,4 +1,5 @@
 <?php
+//xxxxxxxxxxxx для pull на лок комп
 $name = $_POST['name'];
 $email = $_POST['email'];
 $title = $_POST['title'];
